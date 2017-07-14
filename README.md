@@ -42,8 +42,8 @@ The application is seeded using `faker`.
 
 * Note: There is one admin user seeded in the database.  An admin can only be added by seeding the database to prevent any user from accessing admin functionality.  To access the admin account, login using:
 
-Email: "admin@admin.com"
-Password: "password123456"
+* Email: "admin@admin.com"
+* Password: "password123456"
 
 ## Prerequisites
 
@@ -65,10 +65,10 @@ In your terminal:
 * `bundle exec rake db:setup`
 * `bundle exec rake db:test:prepare`
 
-This application uses Stripe.  To configure, you must create a stripe account and a .env file at the top level of your project directory.  In the file, type (replacing the text in quotes with your own keys):
+This application uses Stripe.  To configure, you must create a stripe account and a .env file at the top level of your project directory.  In the file, include (replacing the text in quotes with your own keys):
 
-PUBLISHABLE_KEY="Your publishable key from stripe here"
-SECRET_KEY="Your secret key from stripe here"
+* PUBLISHABLE_KEY="Your publishable key from stripe here"
+* SECRET_KEY="Your secret key from stripe here"
 
 ## Development server
 
