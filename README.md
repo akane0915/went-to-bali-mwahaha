@@ -1,6 +1,6 @@
 # _The Most Amazing E-Commerce Site_
 
-#### _This is a Ruby on Rails E-Commerce Application that includes login functionality, a shopping cart, and the Stripe Gem.  July 14, 2017_
+#### _This is a Ruby on Rails E-Commerce Application that includes login functionality, a shopping cart, and Stripe.  July 14, 2017_
 
 #### By _**Asia Kane**_
 
@@ -21,7 +21,7 @@ User Stories using AJAX:
 - Users can remove items from the shopping cart without a page reload.  The total order price and item count in the nav bar updates.
 
 Additional Features:
-- Includes Stripe Gem so users can pay when finalizing orders.
+- Includes Stripe so users can pay when finalizing orders.
 - Flash messages included for signing up, signing in and signing out.
 - Only admins can add, update and delete a product.
 - Flash messages for adding, updating and deleting products.
@@ -65,7 +65,7 @@ In your terminal:
 * `bundle exec rake db:setup`
 * `bundle exec rake db:test:prepare`
 
-This application uses stripe.  To configure this, you must create a stripe account and a .env file at the top level of your project directory.  In the file, type (replacing the text in quotes with your own keys):
+This application uses Stripe.  To configure, you must create a stripe account and a .env file at the top level of your project directory.  In the file, type (replacing the text in quotes with your own keys):
 
 PUBLISHABLE_KEY="Your publishable key from stripe here"
 SECRET_KEY="Your secret key from stripe here"
@@ -78,22 +78,17 @@ Run `bundle exec rails s` for a dev server. Navigate to `http://localhost:3000/`
 * Make frequent commits with detailed comments.
 * Submit changes as pull request to Asia at akane0915 on Github.
 
-## Running tests
-
-<!-- This app includes unit and integration testing using RSpec, Factory girl, Shouldamatchers, and Capybara for testing.
-Run `bundle exec rspec` in terminal to test. -->
-
 ## Technologies Used
 
 * Ruby
 * Rails
 * AJAX
+* Stripe
 * ActiveRecord
 * Postgres
 * Bundler
 * Rake Gem
 * Bcrypt Gem
-<!-- * Rspec -->
 * HTML
 * CSS
 * Bootstrap
@@ -101,23 +96,6 @@ Run `bundle exec rspec` in terminal to test. -->
 
 ## Known Bugs
 _N/A_
-
-#### Screen Shots
-
-<!-- About Section
-![Aboutpage](./app/assets/images/about-ss.png)
-
-Products Section
-![Products](./app/assets/images/product-ss.png)
-
-Product Detail Section
-![Product Details](./app/assets/images/product-detail.png)
-
-New Product Section (only accessible by admins)
-![New Product](./app/assets/images/new-product-ss.png)
-
-New Review Section (only accessible by authenticated user)
-![New Review](./app/assets/images/new-review-ss.png) -->
 
 ## Support and contact details
 _I encourage you to update/make suggestions/refactor this code as you see fit. I am always open to improvement! Please contact Asia Kane at asialkane@gmail.com with questions._
