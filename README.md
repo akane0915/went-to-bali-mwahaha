@@ -78,6 +78,11 @@ Run `bundle exec rails s` for a dev server. Navigate to `http://localhost:3000/`
 * Make frequent commits with detailed comments.
 * Submit changes as pull request to Asia at akane0915 on Github.
 
+## Running tests
+
+This app uses RSpec and Shouldamatchers for testing.
+Run `bundle exec rspec` in terminal to test.
+
 ## Technologies Used
 
 * Ruby
