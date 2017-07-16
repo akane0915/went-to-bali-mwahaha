@@ -3,7 +3,6 @@ class Order < ApplicationRecord
   belongs_to :user, optional: true
 
   validates :total_price, presence: true
-  validates :total_price, format: { with: /\A\d+(?:\.\d{0,2})?\z/ }, numericality: {greater_than: 0 }
 
   before_save :calculate_total
 
